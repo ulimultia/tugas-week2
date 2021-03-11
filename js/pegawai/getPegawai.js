@@ -7,7 +7,7 @@ fetch('./assets/data/pegawai.json')
     })
 
 function showEmployee(data) {
-    console.log(data);
+    // console.log(data);
     let print = ''
     for (let i = 0; i < data.length; i++) {
         print += `
@@ -47,7 +47,7 @@ function showEmployee(data) {
                                         </div>
                                         <div class="mb-3 text-end">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                            <button type="button" class="btn btn-primary" onclick="swalEdit()">Simpan</button>
+                                            <button type="button" class="btn btn-primary" onclick="swalEdit(${i+1})">Edit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -64,7 +64,7 @@ function showEmployee(data) {
         `
     }
 
-    console.log("isi print:", print);
+    // console.log("isi print:", print);
     const baris = document.getElementById("isi-table");
     baris.innerHTML = print
 }

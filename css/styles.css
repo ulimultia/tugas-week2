@@ -11,9 +11,7 @@ body {
 }
 
 .card {
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 70px 20px;
     /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -25,4 +23,11 @@ body {
 
 .table {
     width: fit-content;
+}
+
+@media(max-width: 800px) {
+    body {
+        background-position-y: top;
+        background-position-x: 60%;
+    }
 }
