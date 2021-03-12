@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/font-awesome.min.css"> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/plugin/sweetalert2/sweetalert2.min.css">
     <link rel="icon" href="assets/images/building.png">
     <title>MyOffice - Pegawai</title>
@@ -105,22 +107,22 @@
                             <p>Filter:</p>
                         </div>
                         <div class="col-2 col-md-3 mt-2">
-                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                <option selected>Pilih salah satu devisi</option>
-                                <option value="1">IT</option>
-                                <option value="2">Marketing</option>
-                                <option value="3">HRD</option>
+                            <select id="filter-devisi" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option value="" selected>Pilih salah satu devisi</option>
+                                <option value="IT">IT</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="HRD">HRD</option>
                               </select>
                         </div>
                         <div class="col-2 col-md-3 mt-2">
-                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                <option selected>Pilih salah satu jabatan</option>
-                                <option value="1">Manager</option>
-                                <option value="2">Staff</option>
+                            <select id="filter-jabatan" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option value="" selected>Pilih salah satu jabatan</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Staff">Staff</option>
                             </select>
                         </div>
                         <div class="col-5 col-md-2 mt-2">
-                            <button class="btn btn-sm btn-success">Filter</button>
+                            <button class="btn btn-sm btn-success" onclick="filter()">Filter</button>
                             <button class="btn btn-sm btn-secondary">Batal</button>
                         </div>
                         <div class="col-3 col-md-1 mt-2">
@@ -161,7 +163,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 
-    <script src="./js/index.js "></script>
+    <!-- <script src="./js/index.js "></script> -->
     <script src="./js/pegawai/getPegawai.js"></script>
     <script src="./js/pegawai/fromValPeg.js"></script>
     <script src="./js/pegawai/pegawai.js"></script>
